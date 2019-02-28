@@ -1,0 +1,135 @@
+﻿
+
+用户表
+
+    用户ID userId int{自增}
+	
+    用户名userName varchar(20)
+	
+	用户性别userGender int (1男 2女 0保密)
+	
+	用户昵称 userNickName  varchar(16)
+	
+	用户密码 userPwd  varchar(20)
+	
+	用户头像 userHead varchar(max)
+	
+	用户邮箱 userEmail varchar(50)
+	
+	手机号码 varchar (20)
+
+	出生日期 birthDay DataTime
+	
+	最后登陆时间 lastLoginTime datatime
+	
+	注册时间 registerTime datatime
+	
+	注册方式 registerWay varchar(20)
+	
+	
+	
+数据表
+
+
+
+    分类表(id)
+	
+	  个人美妆  {(fadtherId)面部护肤  洗发护理 身体护理 口腔护理 女性个护 香水彩妆}
+	  
+	  家庭家具  {厨房用具  农用用具 沙发家具}
+	  
+	  数码电子  {手机 平板 电脑 电子乐器 }
+	  
+	  精品美食  {面食 酒水 零食}
+	  
+	  潮流男女  {韩版衣裤 欧美风范 中国古风 二次元}
+	  
+会员等级: vipId int （主键）
+
+          userId int 对应用户表
+		  
+		  vipGrade int (默认为零)
+		  
+		  allUserMoney varchar(max) (累计消费金额)
+          
+收货表 
+
+    收货主键 ID  int  （主键）
+	
+    用户表ID对应 userId
+	
+	收货地址 address varchar(100)
+	
+商品表
+
+    主键 goodsId int (主键)
+	
+	fadtherId int(对应分类表fadtherId)
+	
+    商品名称goodsName varchar(50)
+	
+	商品介绍goodsIntroduce varchar(500)
+	
+	商品图片goodsImg varchar(max)  (命名规则卖家ID加上 上传时间)
+	
+	商品价格goodsPrice dolube (原价)
+	
+	商品价格goodsMoney dolube (现价)
+	
+	商品销量goodsSales varchar(max)
+	
+	商品库存goodsRepertory int
+	
+	是否在售 goodsStatus int (默认为1，1是上架)
+	
+用户订单表
+
+	订单ID  orderID int (主键) 
+	
+	对应收货表收货地址  address varchar(100)
+	
+	对应用户userId  userId int
+	
+	订单商品  goodsId  goodsId int
+	
+	订单金额  orderMoney dolube
+	
+	订单编号  orderNumber varchar(max)
+	
+	订单状态 orderStatus int (已支付1，待支付0，待收货2，待评价3 ，待退款4 ，已退款5)
+	
+	订单创建时间 creatTime datatime
+	
+	订单付款时间 payTime datatime
+	
+	订单发货时间 deliverTime  datatime
+	
+购物车表
+
+     购物车Id Id int 
+	 
+	 对应商品表 goodsId int
+	 
+	 对应用户表 userId int
+	 
+	 商品数量 goodsCount int
+	 
+	 商品金额 goodsMoney dolube
+	 
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
