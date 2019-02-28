@@ -25,6 +25,10 @@ namespace YIYICHENG.Controllers
             return View();
         }
 
-        //
+        //产品列表
+        public ActionResult Product()
+        {
+            return View();
+        }
     }
 }

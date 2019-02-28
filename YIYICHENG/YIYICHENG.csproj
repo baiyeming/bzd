@@ -360,6 +360,7 @@
     <Content Include="Views\Shared\Nav.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Regster.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
