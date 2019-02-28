@@ -13,5 +13,18 @@ namespace YIYICHENG.Controllers
         {
             return View();
         }
+
+        //登入页面
+        public ActionResult Login()
+        {
+            return View();
+        }
+        //注册页面
+        public ActionResult Regster()
+        {
+            return View();
+        }
+
+        //
     }
 }

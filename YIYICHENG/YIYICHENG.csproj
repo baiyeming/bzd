@@ -358,6 +358,8 @@
     <Content Include="Views\Shared\RightFloat.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Nav.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Regster.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
